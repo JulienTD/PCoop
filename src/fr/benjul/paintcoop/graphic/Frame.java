@@ -782,9 +782,7 @@ public class Frame extends JFrame implements MouseListener {
 	
 	//Recupération de l'instance de la class
 	public static Panel getPanel() {
-		return panel;
-	}
-
+		return panel;}
 	//Change le type d'outils
 	private void setPointType(PointType pointType) {
 		this.type = pointType;

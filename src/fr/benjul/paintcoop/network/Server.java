@@ -47,7 +47,6 @@ public class Server {
 	
 	//Lancement de notre serveur
 	public void start() {
-		
 		t = new Thread(new Runnable(){
 
 			@Override
@@ -75,7 +74,6 @@ public class Server {
 						ClientThread t = new ClientThread(socket);
 						al.add(t);
 						t.start();
-						
 					}
 					// La boucle est finis donc nous déconnectons chaque clients
 					try {
@@ -99,7 +97,6 @@ public class Server {
 				}
 			}});
 		t.start();
-
 	}		
 
 	@SuppressWarnings("resource")

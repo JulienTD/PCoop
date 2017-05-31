@@ -131,10 +131,13 @@ public class Client  {
 						break;
 						
 					case MOUSE:
-						Frame.getPanel().x = msg.getMouse().getX();
-						Frame.getPanel().y = msg.getMouse().getY();
-						Frame.getPanel().name = msg.getMouse().getPseudo();
-						Frame.getPanel().repaint();
+						if(!msg.getMouse().getPseudo().equals(Frame.client.username))
+						{
+							Frame.getPanel().x = msg.getMouse().getX();
+							Frame.getPanel().y = msg.getMouse().getY();
+							Frame.getPanel().name = msg.getMouse().getPseudo();
+							Frame.getPanel().repaint();
+						}
 						break;
 						
 					case CLEAR:

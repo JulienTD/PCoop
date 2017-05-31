@@ -160,7 +160,8 @@ public class Panel extends JPanel {
 			y1 = temp;
 			x1 = temp1;
 			g.fillRect(xa, ya, x1 - xa, y1 - ya);
-
+			
+			
 		} else if (xB < xA && yB > yA) {
 			int temp = x1;
 			x1 = xa;
